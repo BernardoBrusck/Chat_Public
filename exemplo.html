@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='main.js'></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        html, body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            overflow-y: hidden;
+        }
+
+        header{
+            width: 100%;
+            background: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        header form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;   
+        }
+
+        form h1{
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        .perguntas{
+            display: flex;
+            height: 50%;
+        }
+
+        .perguntas input{
+            padding: 10px;
+        }
+
+        main{
+            width: 100%;
+            height: 100%;
+            background: #ccc;
+            padding: 30px;
+            overflow-y: auto;
+        }
+
+        .list{
+            width: 100%;
+            min-height: max-content;
+            background: #fff;
+            padding: 30px;
+        }
+
+        .list h2,
+        .list p{
+            margin: 0;
+        }
+
+        .list h2{
+            margin-bottom: 10px;
+        }
+
+        .list hr{
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <form class="Cadastro">
+            <h1>Mande sua mensagem:</h1>
+            <div class="perguntas">
+                <input type="text" class="nome" placeholder="Digite seu nome....">
+                <input class="mensagem" placeholder="Digite sua mensagem">
+                <button type="submit" class="postar"><strong>Postar</strong></button>
+            </div>
+        </form>
+    </header>
+    <main>
+        <div class="list">
+            <div class="mensagem">
+                <h2 class="usuario">Usuário 1</h2>
+                <p class="mensagem_usuario">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eveniet nisi quibusdam quas quidem cumque iure, a molestias vel aperiam. Facilis debitis nihil cumque, cum quis quod rem maiores pariatur?
+                </p>
+                <hr>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
